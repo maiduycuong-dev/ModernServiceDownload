@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Service Download</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <div class="brand" onclick="switchView('home')">
+                Modern Service <span>Download</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- ================= VIEW 1: HOME / SERVICE DASHBOARD ================= -->
+        <section id="view-home" class="view-section active">
+            <div class="hero" style="text-align: center; margin-bottom: 3rem;">
+                <h1 style="font-size: 2.5rem;">Service Hub</h1>
+                <p>Repository for lightweight, debloated, and optimized system deployments & tools.</p>
+            </div>
+
+            <div style="font-size: 1.1rem; font-weight: 600; color: var(--text-sub); margin-bottom: 1.25rem; text-transform: uppercase;">Service Catalog</div>
+
+            <!-- 4 Cards on 1 Row Grid -->
+            <div class="services-grid">
+                <!-- WinClean Module -->
+                <div class="service-card" onclick="switchView('winclean-download')">
+                    <div>
+                        <div class="card-header" style="margin-top: 0.5rem;">
+                            <span class="card-title">WinClean</span>
+                            <span class="badge badge-active">Active</span>
+                        </div>
+                        <p class="card-desc">Debloated Windows 11 ISO Setup.</p>
+                    </div>
+                    <div class="card-action">
+                        Access WinClean <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Modern Calculator Module -->
+                <div class="service-card" style="opacity: 0.85; cursor: not-allowed;">
+                    <div>
+                        <div class="card-header" style="margin-top: 0.5rem;">
+                            <span class="card-title">Modern Calculator</span>
+                            <span class="badge badge-coming">Coming Soon...</span>
+                        </div>
+                        <p class="card-desc">A modern calculator application featuring an improved user interface. Check GitHub repository for details.</p>
+                    </div>
+                    <div class="card-action" style="color: var(--text-sub);">Future Release</div>
+                </div>
+
+                <!-- Modern Chinese Translate Module -->
+                <div class="service-card" style="opacity: 0.85; cursor: not-allowed;">
+                    <div>
+                        <div class="card-header" style="margin-top: 0.5rem;">
+                            <span class="card-title">Modern Chinese Translate</span>
+                            <span class="badge badge-coming">Coming Soon...</span>
+                        </div>
+                        <p class="card-desc">An intelligent and streamlined Chinese translation tool designed for daily use.</p>
+                    </div>
+                    <div class="card-action" style="color: var(--text-sub);">Future Release</div>
+                </div>
+
+                <!-- Modern Weather Module (External Link) -->
+                <a href="https://maiduycuong-dev.github.io/ModernWeathers/" target="_blank" class="service-card" style="text-decoration: none;">
+                    <div>
+                        <div class="card-header" style="margin-top: 0.5rem;">
+                            <span class="card-title">Modern Weather</span>
+                            <span class="badge badge-active">Live</span>
+                        </div>
+                        <p class="card-desc">A sleek, modern weather forecasting web application with accurate live updates.</p>
+                    </div>
+                    <div class="card-action">
+                        Open Weather App <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- ================= VIEW 2: WINCLEAN DOWNLOAD ================= -->
+        <section id="view-winclean-download" class="view-section">
+            <div class="breadcrumb">
+                <span class="link" onclick="switchView('home')">Home</span>
+                <span>/</span>
+                <span style="color: var(--text-main);">WinClean</span>
+            </div>
+
+            <!-- Tab Switcher -->
+            <div class="module-nav">
+                <button class="module-nav-btn active" onclick="switchView('winclean-download')">Download ISO</button>
+                <button class="module-nav-btn" onclick="switchView('winclean-instruct')">Instruct</button>
+            </div>
+
+            <div class="hero">
+                <h1>Download WinClean ISO</h1>
+                <p>Select the clean ISO edition suitable for your installation.</p>
+            </div>
+
+            <div class="download-grid">
+<!-- Windows 11 Home (Active / Released) -->
+<div class="download-card">
+    <div>
+        <div class="card-header" style="margin-bottom: 0.5rem;">
+            <span class="card-title">Windows 11 Home</span>
+            <span class="badge badge-active">Active</span>
+        </div>
+        <p class="card-desc">Flexible multi-language support. Ideal for personal and family devices.</p>
+        <ul class="simple-list">
+            <li>Multi-language pack support</li>
+            <li>Retains Defender & Windows Hello</li>
+            <li>Pre-bypassed TPM 2.0 & CPU checks</li>
+        </ul>
+    </div>
+    <a href="https://mega.nz/file/mOw03Yqb#HMnRXXyOG-2ZCTPEEqKMmDwu0_QE3NktSzvrWCCr7Uo" target="_blank" class="btn btn-primary" style="text-decoration: none;">
+        Download Home ISO
+    </a>
+</div>
+
+                <!-- Windows 11 Home Single Language (Coming Soon) -->
+                <div class="download-card" style="opacity: 0.75;">
+                    <div>
+                        <div class="card-header" style="margin-bottom: 0.5rem;">
+                            <span class="card-title">Windows 11 Home Single Language</span>
+                            <span class="badge badge-coming">Coming Soon</span>
+                        </div>
+                        <p class="card-desc">Designed for OEM laptops with built-in Single Language licenses.</p>
+                        <ul class="simple-list">
+                            <li>Automatic OEM Digital License activation</li>
+                            <li>Fully optimized for legacy hardware</li>
+                            <li>Bypasses mandatory Microsoft Account requirement</li>
+                        </ul>
+                    </div>
+                    <button class="btn" style="background: var(--border); color: var(--text-sub); cursor: not-allowed;" disabled>
+                        Not Released Yet
+                    </button>
+                </div>
+
+                <!-- Windows 11 Pro (Coming Soon) -->
+                <div class="download-card" style="opacity: 0.75;">
+                    <div>
+                        <div class="card-header" style="margin-bottom: 0.5rem;">
+                            <span class="card-title">Windows 11 Pro</span>
+                            <span class="badge badge-coming">Coming Soon</span>
+                        </div>
+                        <p class="card-desc">Includes advanced management features (BitLocker, Hyper-V, Remote Desktop).</p>
+                        <ul class="simple-list">
+                            <li>Full Pro feature set included</li>
+                            <li>Purged background bloatware</li>
+                            <li>Smooth Windows Update compatibility</li>
+                        </ul>
+                    </div>
+                    <button class="btn" style="background: var(--border); color: var(--text-sub); cursor: not-allowed;" disabled>
+                        Not Released Yet
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= VIEW 3: WINCLEAN INSTRUCT ================= -->
+        <section id="view-winclean-instruct" class="view-section">
+            <div class="breadcrumb">
+                <span class="link" onclick="switchView('home')">Home</span>
+                <span>/</span>
+                <span style="color: var(--text-main);">WinClean Instruct</span>
+            </div>
+
+            <!-- Tab Switcher -->
+            <div class="module-nav">
+                <button class="module-nav-btn" onclick="switchView('winclean-download')">Download ISO</button>
+                <button class="module-nav-btn active" onclick="switchView('winclean-instruct')">Instruct</button>
+            </div>
+
+            <div class="hero">
+                <h1>WinClean Installation Guide</h1>
+                <p>Follow these 3 simple steps to create a bootable USB and install WinClean.</p>
+            </div>
+
+            <div class="instruct-steps">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Download WinClean ISO</h3>
+                        <p>Switch to the <strong>Download ISO</strong> tab, select your preferred edition (Home), and download the `.iso` file.</p>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Create Bootable USB via Rufus</h3>
+                        <p>Insert a USB flash drive (8GB minimum). Launch Rufus, select the downloaded WinClean ISO, set Target System to <strong>UEFI (non CSM)</strong>, and click <strong>START</strong>.</p>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Install On Target Device</h3>
+                        <p>Boot into your PC's Boot Menu and select the USB drive. WinClean automatically bypasses hardware checks (TPM 2.0/CPU/RAM) and skips forced Microsoft Account creation!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        Modern Service Download &copy; 2026 — All-in-One Deployment Hub.
+    </footer>
+
+    <script src="Script.js"></script>
+</body>
+</html>
